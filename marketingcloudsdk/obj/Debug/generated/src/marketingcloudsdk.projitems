@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);ANDROID_1;ANDROID_2;ANDROID_3;ANDROID_4;ANDROID_5;ANDROID_6;ANDROID_7;ANDROID_8;ANDROID_9;ANDROID_10;ANDROID_11;ANDROID_12;ANDROID_13;ANDROID_14;ANDROID_15;ANDROID_16;ANDROID_17;ANDROID_18;ANDROID_19;ANDROID_20;ANDROID_21;ANDROID_22;ANDROID_23;ANDROID_24;ANDROID_25;ANDROID_26</DefineConstants>
+  </PropertyGroup>
+  <!-- Classes -->
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Analytics.IAnalyticsManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Analytics.PiCart.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Analytics.PiCartItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Analytics.PiOrder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.IMCKeep.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.IMCLogListener.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.InitializationStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Location.LatLon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Location.LocationReceiver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.MarketingCloudConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.MarketingCloudSdk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.MCInitContentProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.MCKeepAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Messages.Cloudpage.CloudPageListAdapter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Messages.Cloudpage.CloudPageMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Messages.Geofence.GeofenceMessageResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Messages.Message.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Messages.MessageResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Messages.Proximity.ProximityMessageResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Messages.Region.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Notifications.DefaultUrlPresenter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Notifications.NotificationMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Registration.Attribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Salesforce.Marketingcloud.Registration.Registration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Tozny.Crypto.Android.AesCbcWithIntegrity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Java.Interop.__TypeRegistrations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\__NamespaceMapping__.cs" />
+  </ItemGroup>
+  <!-- Enums -->
+  <ItemGroup />
+</Project>

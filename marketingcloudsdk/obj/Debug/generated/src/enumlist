@@ -1,0 +1,4 @@
+com.salesforce.marketingcloud.InitializationStatus$Status:Com.Salesforce.Marketingcloud:InitializationStatus.Status
+com.salesforce.marketingcloud.notifications.NotificationMessage$Sound:Com.Salesforce.Marketingcloud.Notifications:NotificationMessage.Sound
+com.salesforce.marketingcloud.notifications.NotificationMessage$Trigger:Com.Salesforce.Marketingcloud.Notifications:NotificationMessage.Trigger
+com.salesforce.marketingcloud.notifications.NotificationMessage$Type:Com.Salesforce.Marketingcloud.Notifications:NotificationMessage.Type

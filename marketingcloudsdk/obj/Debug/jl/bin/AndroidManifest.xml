@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.salesforce.marketingcloud" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application>
+        <activity android:name="com.salesforce.marketingcloud.notifications.DefaultUrlPresenter" />
+
+        <receiver
+            android:name="com.salesforce.marketingcloud.location.LocationReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.salesforce.marketingcloud.MCProximityService"
+            android:exported="false" />
+        <service
+            android:name="com.salesforce.marketingcloud.MCService"
+            android:exported="false" />
+        <service
+            android:name="com.salesforce.marketingcloud.MCJobIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.salesforce.marketingcloud.MCReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="${applicationId}.com.salesforce.marketingcloud.NOTIFICATION_OPENED" />
+                <action android:name="${applicationId}.com.salesforce.marketingcloud.WAKE_FOR_ALARM" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter android:priority="-999" >
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.salesforce.marketingcloud.messages.push.MCGcmListenerService"
+            android:exported="false" >
+            <intent-filter android:priority="-999" >
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.salesforce.marketingcloud.messages.push.MCInstanceIdListenerService"
+            android:exported="false" >
+            <intent-filter android:priority="-999" >
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.salesforce.marketingcloud.MCInitContentProvider"
+            android:authorities="${applicationId}.com.salesforce.marketingcloud.initprovider"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,5 @@
+/Users/danilkurkin/Projects/marketingcloudsdk/marketingcloudsdk/bin/Debug/marketingcloudsdk.dll
+/Users/danilkurkin/Projects/marketingcloudsdk/marketingcloudsdk/bin/Debug/marketingcloudsdk.pdb
+/Users/danilkurkin/Projects/marketingcloudsdk/marketingcloudsdk/obj/Debug/marketingcloudsdk.csproj.CoreCompileInputs.cache
+/Users/danilkurkin/Projects/marketingcloudsdk/marketingcloudsdk/obj/Debug/marketingcloudsdk.dll
+/Users/danilkurkin/Projects/marketingcloudsdk/marketingcloudsdk/obj/Debug/marketingcloudsdk.pdb
