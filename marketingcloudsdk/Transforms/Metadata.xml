@@ -7,4 +7,24 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
+  
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='b']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='d']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='e']" name="obfuscated">false</attr>
+  
+  
+  
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='b']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='c']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='d']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='e']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='RegistrationManager.a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='RegistrationManager.b']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='RegistrationManager.c']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='RegistrationManager.d']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='RegistrationManager.e']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='RegistrationManager' and @extends='com.salesforce.marketingcloud.d']" name="extends">com.salesforce.marketingcloud.d</attr>
+ 
 </metadata>
