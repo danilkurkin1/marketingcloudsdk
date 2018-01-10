@@ -9,22 +9,46 @@
   -->
   
   <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='a']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='b']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.b']/class[@name='b']" name="obfuscated">false</attr>
   <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='d']" name="obfuscated">false</attr>
   <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='e']" name="obfuscated">false</attr>
-  
-  
+
   
   <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='a']" name="obfuscated">false</attr>
   <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='b']" name="obfuscated">false</attr>
   <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='c']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='d']" name="obfuscated">false</attr>
+
   <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='e']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='RegistrationManager.a']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='RegistrationManager.b']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='RegistrationManager.c']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='RegistrationManager.d']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='RegistrationManager.e']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='RegistrationManager' and @extends='com.salesforce.marketingcloud.d']" name="extends">com.salesforce.marketingcloud.d</attr>
+
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='Registration.a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.messages']/class[@name='Region.a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.messages']/class[@name='Message.a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.messages.push']/class[@name='a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.messages.push']/class[@name='PushMessageManager.a']" name="obfuscated">false</attr>
+
+
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='notifications']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='b']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='c']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='NotificationMessage']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='NotificationMessage.a']" name="obfuscated">false</attr>
  
+
+  <!--  due to a duplicate field, method or nested type name-->
+  
+  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='RegistrationManager']/field[@name='a']" />
+  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='NotificationMessage']/field[@name='a']" />
+  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='NotificationManager']/field[@name='a']" />
+  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='NotificationManager']/field[@name='b']" />
+  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.messages.push']/class[@name='PushMessageManager']/field[@name='a']" />
+
+  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.messages']/class[@name='Message']/field[@name='b']" />
+  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.messages']/class[@name='Message']/field[@name='a']" />
+  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.messages']/class[@name='Message']/field[@name='c']" />
+  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.messages.push']/class[@name='PushMessageManager']/field[@name='b']" />
+  <remove-node path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='MCReceiver']/field[@name='a']" />
+  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.messages']/class[@name='RegionMessageManager']/field[@name='a']" />
+  
+  
 </metadata>
