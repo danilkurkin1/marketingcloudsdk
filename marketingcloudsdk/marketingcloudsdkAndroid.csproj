@@ -16,17 +16,17 @@
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackageId>marketingcloudsdkAndroid</PackageId>
-    <PackageVersion>1.0.3</PackageVersion>
+    <PackageVersion>1.0.4</PackageVersion>
     <Description>marketingcloudsdkAndroid</Description>
     <Authors>danilkurkin1, joaoasilva, soniamartin</Authors>
     <Title>marketingcloudsdk.Android</Title>
     <Summary>Marketing cloud  sdk for Apps Android SDK </Summary>
     <Owners>danilkurkin1, joaoasilva, soniamartin</Owners>
-    <Copyright>marketingcloud</Copyright>
+    <Copyright>marketingcloud Salesforce</Copyright>
     <PackageProjectUrl>https://github.com/danilkurkin1/marketingcloudsdk</PackageProjectUrl>
     <PackageReleaseNotes>Using version 5.3.2 salesforce-marketingcloud SDK
 
-All missing methods are present now</PackageReleaseNotes>
+Push notification bindings update</PackageReleaseNotes>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <AndroidCodegenTarget>XamarinAndroid</AndroidCodegenTarget>
