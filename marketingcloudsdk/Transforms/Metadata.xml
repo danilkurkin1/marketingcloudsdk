@@ -1,54 +1,67 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-	<!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
-  
+	
   <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='a']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.b']/class[@name='b']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='c']" name="managedName">cc</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='d']" name="managedName">ControlChannel</attr>
   <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='d']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='e']" name="obfuscated">false</attr>
-
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.d']/class[@name='b']" name="managedName">ControlChannelListener</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='c']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.d']/class[@name='b']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='g']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='h']" name="obfuscated">false</attr>
   
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='a']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='b']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='c']" name="obfuscated">false</attr>
-
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='e']" name="obfuscated">false</attr>
-
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='Registration.a']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.messages']/class[@name='Region.a']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.messages']/class[@name='Message.a']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.messages.push']/class[@name='a']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.messages.push']/class[@name='PushMessageManager.a']" name="obfuscated">false</attr>
-
-
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='notifications']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='a']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='b']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='c']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='NotificationMessage']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='NotificationMessage.a']" name="obfuscated">false</attr>
  
 
-  <!--  due to a duplicate field, method or nested type name-->
-  
-  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='RegistrationManager']/field[@name='a']" />
-  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='NotificationMessage']/field[@name='a']" />
-  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='NotificationManager']/field[@name='a']" />
-  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.notifications']/class[@name='NotificationManager']/field[@name='b']" />
-  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.messages.push']/class[@name='PushMessageManager']/field[@name='a']" />
 
-  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.messages']/class[@name='Message']/field[@name='b']" />
-  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.messages']/class[@name='Message']/field[@name='a']" />
-  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.messages']/class[@name='Message']/field[@name='c']" />
-  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.messages.push']/class[@name='PushMessageManager']/field[@name='b']" />
-  <remove-node path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='MCReceiver']/field[@name='a']" />
-  <remove-node path="/api/package[@name='com.salesforce.marketingcloud.messages']/class[@name='RegionMessageManager']/field[@name='a']" />
+  <add-node path="/api/package[@name='com.salesforce.marketingcloud']">
+    <class abstract="false" deprecated="not deprecated" final="true" name="MarketingCloudSdk" static="false" visibility="public" extends="java.lang.Object">
+      <constructor deprecated="not deprecated" final="false" name="MarketingCloudSdk" static="false" type="com.salesforce.marketingcloud.MarketingCloudSdk" visibility="public">
+        <parameter name="paramMarketingCloudConfig" type="com.salesforce.marketingcloud.MarketingCloudConfig"/>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="init" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="paramApplication" type="android.app.Application"/>
+        <parameter name="paramMarketingCloudConfig" type="com.salesforce.marketingcloud.MarketingCloudConfig"/>
+        <parameter name="paramInitializationListener" type="com.salesforce.marketingcloud.MarketingCloudSdk.InitializationListener"/>
+      </method> 
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.salesforce.marketingcloud.MarketingCloudSdk" static="true" synchronized="false" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNotificationManager" native="false" return="com.salesforce.marketingcloud.notifications.NotificationManager" static="false" synchronized="false" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRegistrationManager" native="false" return="com.salesforce.marketingcloud.registration.RegistrationManager" static="false" synchronized="false" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPushMessageManager"  native="false" return="com.salesforce.marketingcloud.messages.push.PushMessageManager" static="false" synchronized="false" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCloudPageMessageManager"  native="false" return="com.salesforce.marketingcloud.messages.cloudpage.CloudPageMessageManager" static="false" synchronized="false" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRegionMessageManager"  native="false" return="com.salesforce.marketingcloud.messages.RegionMessageManager" static="false" synchronized="false" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAnalyticsManager"  native="false" return="com.salesforce.marketingcloud.analytics.AnalyticsManager" static="false" synchronized="false" visibility="public"/>
+     
+      
+      <method abstract="false" deprecated="not deprecated" final="false" name="setLogLevel"  native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="paramInt" type="int"/>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLogLevel"  native="false" return="java.lang.Object" static="true" synchronized="false" visibility="public"/>
+      
+        <method abstract="false" deprecated="not deprecated" final="false" name="setLogListener"  native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="paramInt" type="com.salesforce.marketingcloud.MCLogListener"/>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSdkVersionName"  native="false" return="java.lang.String" static="true" synchronized="false" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSdkVersionCode"  native="false" return="java.lang.Integer" static="true" synchronized="false" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="requestSdk"  native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="paramWhenReadyListener" type="com.salesforce.marketingcloud.MarketingCloudSdk.WhenReadyListener"/>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="requestSdk"  native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="paramWhenReadyListener" type="com.salesforce.marketingcloud.MarketingCloudSdk.WhenReadyListener"/>
+        <parameter name="paramLooper" type="java.lang.Object"/>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSdkState"  native="false" return="org.json.JSONObject" static="false" synchronized="false" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isReady"  native="false" return="boolean" static="true" synchronized="false" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isInitializing"  native="false" return="boolean" static="true" synchronized="false" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMarketingCloudConfig"  native="false" return="com.salesforce.marketingcloud.MarketingCloudConfig" static="false" synchronized="false" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInitializationStatus"  native="false" return="com.salesforce.marketingcloud.InitializationStatus" static="false" synchronized="false" visibility="public"/>
+      
+    
+  </class>
+  </add-node>
   
+  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='MarketingCloudSdk']" name="obfuscated">false</attr>
   
+  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='RegistrationManager']" name="obfuscated">false</attr>
+   
 </metadata>
