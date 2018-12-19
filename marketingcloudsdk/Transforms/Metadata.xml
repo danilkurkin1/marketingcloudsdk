@@ -1,29 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
 	
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='a']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='c']" name="managedName">cc</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='d']" name="managedName">ControlChannel</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='d']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.d']/class[@name='b']" name="managedName">ControlChannelListener</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='c']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.d']/class[@name='b']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='g']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='h']" name="obfuscated">false</attr>
-  
- 
-
-
   <add-node path="/api/package[@name='com.salesforce.marketingcloud']">
     <class abstract="false" deprecated="not deprecated" final="true" name="MarketingCloudSdk" static="false" visibility="public" extends="java.lang.Object">
       <constructor deprecated="not deprecated" final="false" name="MarketingCloudSdk" static="false" type="com.salesforce.marketingcloud.MarketingCloudSdk" visibility="public">
         <parameter name="paramMarketingCloudConfig" type="com.salesforce.marketingcloud.MarketingCloudConfig"/>
       </constructor>
       <method abstract="false" deprecated="not deprecated" final="false" name="init" native="false" return="void" static="true" synchronized="false" visibility="public">
-        <parameter name="paramApplication" type="android.app.Application"/>
+        <parameter name="paramContext" type="android.content.Context"/>
         <parameter name="paramMarketingCloudConfig" type="com.salesforce.marketingcloud.MarketingCloudConfig"/>
         <parameter name="paramInitializationListener" type="com.salesforce.marketingcloud.MarketingCloudSdk.InitializationListener"/>
-      </method> 
+      </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.salesforce.marketingcloud.MarketingCloudSdk" static="true" synchronized="false" visibility="public"/>
       <method abstract="false" deprecated="not deprecated" final="false" name="getNotificationManager" native="false" return="com.salesforce.marketingcloud.notifications.NotificationManager" static="false" synchronized="false" visibility="public"/>
       <method abstract="false" deprecated="not deprecated" final="false" name="getRegistrationManager" native="false" return="com.salesforce.marketingcloud.registration.RegistrationManager" static="false" synchronized="false" visibility="public"/>
@@ -55,13 +42,7 @@
       <method abstract="false" deprecated="not deprecated" final="false" name="isInitializing"  native="false" return="boolean" static="true" synchronized="false" visibility="public"/>
       <method abstract="false" deprecated="not deprecated" final="false" name="getMarketingCloudConfig"  native="false" return="com.salesforce.marketingcloud.MarketingCloudConfig" static="false" synchronized="false" visibility="public"/>
       <method abstract="false" deprecated="not deprecated" final="false" name="getInitializationStatus"  native="false" return="com.salesforce.marketingcloud.InitializationStatus" static="false" synchronized="false" visibility="public"/>
-      
-    
-  </class>
+    </class>
   </add-node>
-  
-  <attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='MarketingCloudSdk']" name="obfuscated">false</attr>
-  
-  <attr path="/api/package[@name='com.salesforce.marketingcloud.registration']/class[@name='RegistrationManager']" name="obfuscated">false</attr>
    
 </metadata>
